@@ -1,0 +1,36 @@
+# Exibe as opções de operação para o usuário
+print("Escolha uma operação:")
+print("1. Soma")
+print("2. Subtração")
+print("3. Multiplicação")
+print("4. Divisão")
+
+# Solicita ao usuário que digite o número da operação
+opcao = input("Digite o número da operação: ")
+
+# Solicita ao usuário que digite os dois números para a operação
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+# Realiza a operação com base na escolha do usuário
+if opcao == '1':
+    resultado = num1 + num2
+    print(f"A soma é: {resultado}")
+
+elif opcao == '2':
+    resultado = num1 - num2
+    print(f"A subtração é: {resultado}")
+
+elif opcao == '3':
+    resultado = num1 * num2
+    print(f"A multiplicação é: {resultado}")
+
+elif opcao == '4':
+    if num2 != 0:
+        resultado = num1 / num2
+        print(f"A divisão é: {resultado}")
+    else:
+        print("Erro! Divisão por zero.")
+
+else:
+    print("Erro! Opção inválida.")
